@@ -1,0 +1,49 @@
+$device-padding-vertical: 5em;
+$device-padding-horizontal: .4em;
+$device-screen-width: 14em;
+$device-screen-height: 25em;
+$device-background: darken(gray, 40);
+$device-backside-background: darken($device-background, 10);
+$device-text-color: white;
+
+$device-background-top: #162C4C; 
+$device-background-bottom: #0A120D;
+$gradient-angle: 10deg;
+$device-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
+
+.device-background {
+  @include background(url($device-image), linear-gradient($gradient-angle, $device-background-bottom, $device-background-top), no-repeat $device-background-top scroll);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 20em;
+
+  button {
+    @include button(simple, $base-background-color);
+    font-size: $base-font-size;
+    outline: none;
+  }
+}
+
+.device-text {
+  color: $device-text-color;
+  padding: 2em;
+
+  @include media($large-screen) {
+    max-width: 50%;
+    padding: 4em;
+    float: left;
+  }
+
+  h4 {
+    margin-bottom: .5em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid transparentize($device-text-color, .7);
+  }
+
+  p {
+    color: $blue;
+    font-family: $sans-serif;
+    margin-bottom: 1.5em;
+  }
+}
