@@ -5,8 +5,8 @@
 
 # Use _config.build.yml to override these settings on `grunt build`.
 
-name: test2
-description: test2.
+name: ohyes
+description: oh yes.
 
 author:
   name: Sarah Ohye
