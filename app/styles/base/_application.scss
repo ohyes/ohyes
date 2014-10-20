@@ -13,8 +13,7 @@
  * _forms.scss
  * _lists.scss
  * _library.scss        => Custom classes used throughout the app.
- * _tables.scss
- * _typography.scss
+df.dlkjklkhfklhfhlkfalkhflkhhdkfkcdkn.vnklnkl ck * _typography.scss
  * _utilities.scss
  * _variables.scss
  * _component_name.scss => Styles for a component of functionality (e.g. – modal).
@@ -22,10 +21,31 @@
  * ---------------------------------------------------------------------------
  */
 
-.header-primary {}
+
+
+.header-primary {
+  width: 100%;
+  @include background(linear-gradient(145deg, #C04848 10%, #480048 90%) left repeat);
+  @include row();
+}
+
+.title {
+  padding: 50px 0 50px 0;
+  @include outer-container;
+  .title-inner {
+    @include span-columns(9);
+    @include shift(1);
+  }
+}
 
 .nav-primary {}
 
-.content-primary {}
+.wrapper {
+  @include outer-container;
+  .inner {
+    @include span-columns(9);
+    @include shift(1);
+  }
+}
 
 .footer-primary {}

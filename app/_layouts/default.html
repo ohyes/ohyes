@@ -6,7 +6,7 @@
     <title>{{ page.title }}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     {% include shared/styles.html %}
@@ -23,7 +23,13 @@
 
     {% include shared/header.html %}
     {% include shared/nav.html %}
+    <div class="wrapper">
+    <div class="inner">
+    <h1> {{ page.title }} </h1>
+    <h4>{{ page.date | date: "%B %d, %Y" }}</h4>
     {{ content }}
+    </div>
+    </div>
     {% include shared/footer.html %}
 
     {% include shared/scripts.html %}

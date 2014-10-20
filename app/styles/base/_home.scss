@@ -1,0 +1,29 @@
+.posts {
+  margin-top: 20px;
+
+  li {
+    padding: 25px 0 25px 0;
+    border-bottom: 1px solid $light-gray;
+
+    a .continue {
+      display: block;
+    }
+
+    .post-title {
+      font-family: $karla;
+      color: $dark-gray;
+      font-size: $base-font-size * 1.75;
+      display: block;
+
+        a {
+          color: $dark-gray;
+        }
+    }
+
+    .post-timestamp {
+      color: $medium-gray;
+      display: block;
+      padding-bottom: 20px;
+    }
+}
+}

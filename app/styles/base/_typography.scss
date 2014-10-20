@@ -1,3 +1,4 @@
+
 body {
   -webkit-font-smoothing: antialiased;
   background-color: $base-background-color;
@@ -12,6 +13,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: $header-line-height;
   margin: 0;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
+  color: $light-gray;
 }
 
 h1 {
@@ -43,7 +45,7 @@ p {
 }
 
 a {
-  @include transition(color 0.1s linear);
+  @include transition(color 0.4s linear);
   color: $base-link-color;
   text-decoration: none;
 
@@ -52,7 +54,8 @@ a {
   }
 
   &:active, &:focus {
-    color: $hover-link-color;
+    @include transition(color .3s linear);
+    color: #007BE6;
     outline: none;
   }
 }
