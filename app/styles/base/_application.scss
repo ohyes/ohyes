@@ -13,7 +13,7 @@
  * _forms.scss
  * _lists.scss
  * _library.scss        => Custom classes used throughout the app.
-df.dlkjklkhfklhfhlkfalkhflkhhdkfkcdkn.vnklnkl ck * _typography.scss
+ * _typography.scss
  * _utilities.scss
  * _variables.scss
  * _component_name.scss => Styles for a component of functionality (e.g. – modal).
@@ -21,7 +21,10 @@ df.dlkjklkhfklhfhlkfalkhflkhhdkfkcdkn.vnklnkl ck * _typography.scss
  * ---------------------------------------------------------------------------
  */
 
-
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
 
 .header-primary {
   width: 100%;
@@ -32,10 +35,6 @@ df.dlkjklkhfklhfhlkfalkhflkhhdkfkcdkn.vnklnkl ck * _typography.scss
 .title {
   padding: 50px 0 50px 0;
   @include outer-container;
-  .title-inner {
-    @include span-columns(9);
-    @include shift(1);
-  }
 }
 
 .nav-primary {}
